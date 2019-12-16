@@ -1,0 +1,29 @@
+header {
+    padding: 25px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.item-price::before,
+.item-total::before,
+#cart-subtotal::before,
+#checkout-subtotal::before,
+#checkout-tax::before,
+#checkout-total::before {
+    content: "$";
+}
+
+.quantity-add:hover,
+.quantity-subtract:hover {
+    cursor: pointer;
+}
+
+#checkout-page {
+    min-height: 100vh;
+}
+
+.no-wrap {
+    white-space: nowrap;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bike Rentals</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="header">
+        <section class="container">
+            <h1>Rent a Bike!</h1>
+        </section>
+    </header>
+    <main>
+        <section id="products" class="container">
+        </section>
+        <section id="cart" class="container">
+            <article id="totals" class="row py-5 text-right">
+                <section class="col">
+                    <h2>Subtotal: <span id="cart-subtotal">0.00</span></h2>
+                </section>
+            </article>
+            <article id="checkout" class="row my-2">
+                <section class="col text-right">
+                    <button class="btn btn-primary" onclick="checkOut()">Checkout</a>
+                </section>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <section id="checkout-page" class="container" style="display: none;">
+            <article class="row my-2 py-4">
+                <section class="col">
+                    <h1>Checkout</h1>
+                </section>
+                <section class="col text-right">
+                    <a href="#header">↑ Change Order</a>
+                </section>
+                <section class="w-100">
+                    <hr>
+                </section>
+                <section id="item-list" class="col"></section>
+            </article>
+            <article class="row py-5 text-right">
+                <section class="col">
+                    <p>Subtotal: <span id="checkout-subtotal">0.00</span></p>
+                    <p>Tax (8.875%): <span id="checkout-tax">0.00</span></p>
+                    <h2>Total: <span id="checkout-total">0.00</span></h2>
+                </section>
+            </article>
+            <article class="row">
+                <section class="col text-center">
+                    <button class="btn btn-primary" onclick="confirmRental()">Submit</a>
+                </section>
+            </article>
+        </section>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
